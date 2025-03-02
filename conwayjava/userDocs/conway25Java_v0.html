@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+    <meta charset="UTF-8">
+
+    <!--
+<link rel="stylesheet" type="text/css" href="../css/issStyle1.css">
+<script type="text/javascript" src="../css/issStyle.js"></script>
+-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/Users/sebastiano/Desktop/Ingegnerie dei Sistemi Software/conwayjava/userDocs/css/Basic.css">
+<link rel="stylesheet" type="text/css" href="path/to/custom.css">
+<link rel="stylesheet" type="text/css" href="path/to/pygment.css"> <!-- Se necessario -->
+<link rel="stylesheet" type="text/css" href="path/to/sphinxdoc.css"> <!-- Se necessario -->
+
+        <!-- <script type="text/javascript" src="./commons/resources/scripts/myScripts.js"></script> -->
+<style type="text/css">
+body
+{
+    margin-left:  30px;
+    margin-right: 30px;
+}
+
+P
+{
+    font-family: Tahoma;
+    font-size: 10pt;
+}
+
+a, a:visited, a:active, a:link, a:hover {
+    text-decoration: underline;
+    color: #545454;
+    background-color: transparent;
+	font-size: 93%;
+}
+
+a:hover {
+    background-color: #cccccc;
+}
+
+
+hr {
+    clear: both;
+    height: 1px;
+    color: #242424;
+    background-color: transparent;
+}
+
+h1, h2, h3 {
+    color: #242424;
+    clear: left;
+    font: 100% Tahoma, Helvetica, Arial, sans-serif;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+top {
+	width: 100%;
+}
+
+
+#i {
+    color: #ff1010;
+}
+tt{
+	font-family: "Arial";
+    font-size: 90%;
+	color: #006600;
+}
+em{
+	font-family: "Arial";
+    font-size: 80%;
+	font-weight: bold;
+	border-style:solid;
+	border-color: #abe876;
+    color: #1632cc;
+}
+bc{
+	font-family: "Arial";
+	font-size: 90%;
+	font-weight: bold;
+    color: #990000;
+	background-color: #fcf8c7;
+}
+ks{
+	font-family: "Arial";
+	font-weight: bold;
+    color: #0000CD	;
+	font-size: 90%;
+}
+kc{
+	font-family: "Arial";
+	font-weight: bold;
+    color: #008000	;
+	font-size: 90%;
+}
+pre{
+	font-family: "Consolas";
+	font-size: 85%;
+	background-color: #f5f5f5;
+	border: 1.5px solid silver;
+	padding: 5px;
+}
+m{
+	font-family: "Helvetica";
+	line-height: 100%;
+ 	font-size: 75%;
+}
+div.body{
+
+    font-size: 18px;
+}
+k{
+    color: #990000;
+	font-weight: bold;
+	font-size: 90%;
+}
+h1 {
+    font-size: 150%;
+    background-color: #b2c0ff;
+	padding: 10px;
+}
+
+h2 {
+    background-color: #9ed8ff;
+    font-size: 130%;
+}
+
+h3 {
+	background-color: #e6ccff;
+    font-size: 100%;
+}
+h4 {
+    background-color: #ccffcc;
+    font-size: 100%;
+	width: 95%;
+	border-radius: 5px;
+	padding: 2px;
+}
+h5 {
+    background-color: #d5ffb0;
+    font-size: 100%;
+
+}
+div.req{
+	background-color: #d9ffb3;
+    font-size: 18px;
+	width: 700px;
+    border: 3px solid green;
+    padding: 15px;
+    margin: 10px;
+}
+div.remark{
+	background-color: #E3F2FD;
+    border: 1.5px solid #d5f2ed;
+    padding: 15px;
+    margin: 10px;
+	border-radius: 25px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+ol, ul, li {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+img {
+	border: 1.5px solid #d5f2ed
+
+}
+
+a, a:visited, a:active, a:link, a:hover {
+    text-decoration: underline;
+    color: #545454;
+    background-color: transparent;
+}
+
+div.wrapdesc{
+	width: 90%;
+	margin: auto;
+}
+
+div.imagedesc{
+	width: 85%;
+	margin: auto;
+}
+</style>
+
+
+
+</head>
+
+
+
+
+
+<title>conway25Java_v0</title></head>
+
+<!--
+	<body onload="loadNav();">
+		<div id="openButton" class="openButton" onclick="openNav(true)">&#9776; Menu</div>
+		<div id="sidenav" class="sidenav">
+			<a class="closeButton" href="javascript:void(0)" onclick="closeNav(true)">&times;</a>
+			<a href=".README.html">ReadMe</a>
+			<a class="sprint" href="../../../Sprint0/Codice/userDocs/Cold%20Storage%20Service%20-%20Natali%20V3.html">Sprint0</a>
+			<a class="sprint" href="../../../Sprint1.0/Codice/userDocs/Sprint%201.0%20-%20V3.html">Sprint1.0</a>
+			<a class="sprint" href="../../../Sprint1.1/Codice/userDocs/Sprint%201.1%20-%20V3.html">Sprint1.1</a>
+			<a id="currentSprint" class="sprint" href="#">&#8211;&#8212; Sprint2 &#8212;&#8211;</a>
+			<div class="sidenavSection">
+				<a href="#Goal Sprint 2">Goal Sprint 2</a>
+				<a href="#Requisiti">Requisiti</a>
+				<a href="#Analisi dei Requisiti">Analisi dei Requisiti</a>
+				<a href="#Analisi del Problema">Analisi del Problema</a>
+				<a href="#Test Plan">Test Plan</a>
+				<a href="#Progettazione">Progettazione</a>
+				<a href="#Deployment">Deployment</a>
+			</div>
+			<p class="separator">&mdash;&mdash;&mdash;&ndash;&ndash;&mdash;&mdash;&mdash;</p>
+			<a class="sprint" href="../../../Sprint3/Codice/userDoc/Sprint%203.html">Sprint3</a>
+			<bottom-spacer/>
+		</div>
+-->
+<body>
+<div id="top">
+<h1>LABORATORIO DI INGEGNERIA DEI SISTEMI SOFTWARE <font size="5"></font> </h1>
+</div>
+
+<div class="body">
+<h2>Introduction</h2>
+
+    <div class="remark">
+        Diario di bordo per tenere traccia dell'evoluzione del progetto della GUI per Conway Life in Java
+    </div>
+
+
+<h2>Requirements</h2>
+
+
+<div class="remark">
+Realizzazione di una pagina HTML che funga da dispositivo di input-output evoluto per applicazione ConwayLife25 in Java.
+</div>
+
+
+
+<h2>Requirement analysis</h2>
+
+<div class="remark">
+
+<style>
+  table {
+    width: 100%;
+  }
+
+  td:first-child, th:first-child {
+    width: 100px;
+  }
+
+  td:nth-child(2), th:nth-child(2) {
+    width: auto;
+  }
+  td:nth-child(3), th:nth-child(3) {
+  width: 150px;
+}
+</style>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Id. Requisito</th>
+      <th>Requisito</th>
+      <th>Tipo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R1F</td>
+      <td>La GUI deve mostrare la griglia del gioco Conway Life</td>
+      <td>Funzionale</td>
+    </tr>
+    <tr>
+      <td>R2F</td>
+      <td>Le celle della griglia devono evolversi dinamicamente secondo le regole del gioco</td>
+      <td>Funzionale</td>
+    </tr>
+    <tr>
+      <td>R3F</td>
+      <td>L'utente deve poter cliccare sulle celle della griglia per attivarle o disattivarle</td>
+      <td>Funzionale</td>
+    </tr>
+      <tr>
+      <td>R4F</td>
+      <td>Deve essere possibile avviare, stoppare e resettare la simulazione</td>
+      <td>Funzionale</td>
+    </tr>
+    <tr>
+      <td>R1NF</td>
+      <td>La GUI deve aggiornarsi in pochi millisecondi</td>
+      <td>Non Funzionale</td>
+    </tr>
+    <tr>
+      <td>R2NF</td>
+      <td>La GUI deve distinguere le celle accese e le celle spente con colori adatti</td>
+      <td>Non Funzionale</td>
+    <tr>
+    <tr>
+      <td>R3NF</td>
+      <td>I comandi della GUI devono essere intuitivi</td>
+      <td>Non Funzionale</td>
+    </tr>
+  </tbody>
+</table>
+
+        <h3>R1F</h3>
+        Visualizzare la griglia per rappresentare lo stato del gioco, ottimizzando la dimensione e numero di celle
+
+        <h3>R2F</h3>
+         Implementare la logica di aggiornamento delle celle in baso allo stato dei vicini, seguendo le regole di Conway Life, con l'ausilio di un timer per il meccanismo di aggiornamento
+
+        <h3>R3F</h3>
+        Consentire all'utente di interagire con la simulazione, gestendo gli eventi per ogni click, fornendo un feedback visivo ed evitando la sovrapposizione di comandi
+
+        <h3>R4F</h3>
+        Fornire controlli essenziali per la gestione della simulazione, mostrando i bottoni di start, stop, reset e lo stato attuale della simulazione
+
+        <h3>R1NF</h3>
+        Garantire una risposta immediata dell’interfaccia e fluidità, tramite gestione efficiente delle interazioni
+
+        <h3>R2NF</h3>
+        Offrire una chiara distinzione visiva tra celle vive e morte, tramite accurata scelta della palette colori e utilizzo di elevato contrasto
+
+        <h3>R3NF</h3>
+        Assicurarsi che l'utente possa facilmente utilizzare l'interfaccia, offrendo un design semplice e pulito dei comandi di controllo, con possibilità di introduzione di una breve guida per esplicitare le regole del gioco
+
+        <h3>Refactoring</h3>
+        Introduzione di classe Cell e Grid, per dare una rappresentazione esplicita del concetto di cella come unità fondamentale, che compongono la griglia
+        Seguono opportune modifiche alle classi Life e LifeController.<br>
+
+        Ora esiste una classe Grid, che si occupa della creazione e gestione delle celle.<br>
+
+        La classe Life non ha più bisogno di occuparsi direttamente della struttura interna della griglia.
+
+
+</div>
+
+
+
+
+<h2>Problem analysis</h2>
+
+    <div class="remark">
+
+        <h3>Architettura</h3>
+        <b>Modello Client-Server</b>: Utilizzare un'architettura basata su client-server, dove il server ospita la logica di gioco (ConwayLife25) e gestisce le connessioni degli utenti. La GUI sarà implementata come un'applicazione web che comunica con il server tramite WebSocket.
+
+        <h3>Interfaccia Grafica</h3>
+        <b>Design</b>: Interfaccia utente semplice e intuitiva che consenta agli utenti di interagire facilmente con la simulazione, utilizzando rappresentazioni diverse per celle vive e morte, mostrando lo stato dell'esecuzione
+        (se le celle sono tutte morte non è detto che l'utente abbia terminato l'esecuzione.
+        <b>Controlli</b>: Includere pulsanti per avviare, fermare e resettare la simulazione. Assicurarsi che ci sia un feedback visivo chiaro quando le azioni vengono eseguite.
+        <b>Griglia</b>: Utilizzare una rappresentazione grafica della griglia delle celle, con la possibilità di interagire con le celle per impostare il loro stato iniziale. Implementare una griglia dinamica che si aggiorna in tempo reale.
+
+        <h3>Comunicazione</h3>
+        <b>WebSocket</b>: Utilizzare WebSocket per la comunicazione tra il client e il server, ciò consente aggiornamenti in tempo reale della griglia.
+        <b>Owner</b>: Per la comunicazione, bisogna inviare comandi dal client al server solo quando l'owner interagisce con la simulazione, nonostante tutti gli utenti connessi vedano l'evoluzione della griglia.
+
+        <h3>Framework e Tecnologie</h3>
+        <b>SpringBoot</b>: Utilizzare SpringBoot per gestire la logica del server, semplificando la creazione di applicazioni web senza alterare lo sviluppo Java.
+
+        <h3>Caso d'uso</h3>
+        <ul>
+            <li>Un utente apre la pagina HTML e stabilisce una connessione (tramite WebSocket) con il server</li>
+            <li>L'owner imposta lo stato iniziale delle celle e avvia la simulazione</li>
+            <li>Il server calcola la nuova generazione di celle e modifica solo le celle che cambiano stato a tutti gli utenti connessi</li>
+            <li>Gli utenti possono continuare a osservare l'evoluzione del gioco in tempo reale e interagire con la griglia (se utente owner)
+                interrompendola, riavviandola, resettando la griglia o continuando a modificare le celle</li>
+        </ul>
+
+        <h3>Tempistiche</h3>
+        La progettazione della GUI in java richiede dalle 2 alle 3 settimane (in funzione delle competenze e orari disponibili)
+
+    </div>
+
+
+
+
+<h2>Test plans</h2>
+    <div class="remark">
+        L'obiettivo di questa fase è garantire che la GUI interagisca correttamente con l'applicazione ConwayLife25 in Java. I test mirano a verificare la corretta gestione della griglia di gioco, la comunicazione tra client e server, e l'interazione dell'utente tramite la GUI.<br>
+        <b>Test JUnit</b>: Conway25JavaTest.java (da integrare con assert)
+    </div>
+
+
+
+
+<h2>Project</h2>
+
+
+
+<h2>Testing</h2>
+
+
+<h2>Deployment</h2>
+
+
+<h2>Maintenance</h2>
+
+<!-- USEFUL
+<table style="width:100%" border="1">
+<tr>
+<td style="width:50%">
+</td>
+<td></td>
+</tr>
+</table>
+-->
+
+<br/><br/>
+</div>
+
+<div style="background-color:rgba(86, 56, 253, 0.9); width:60%;text-align:left;color:white">
+By GiannittiSebastiano email: sebastiano.giannitti@studio.unibo.it,
+<!-- <img src="./img/mbot-S.jpg" alt="mbot" width="15%" height="15%"> -->
+<img> src" "" alt="fotomia" width="15%" height="15%">
+GIT repo: https://github.com/sebastianogiannitti/iss.git
+</div>
+</body>
+                                                   </html>
