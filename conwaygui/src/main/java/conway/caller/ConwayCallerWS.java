@@ -67,12 +67,14 @@ public class ConwayCallerWS {
     }
     
     @OnOpen
+    //chiama il metodo quando viene aperto il socket
     public void onOpen(Session session) {
         this.session = session;
         CommUtils.outyellow("ConwayCallerWs | Connessione al WebSocket stabilita!");
     }
 
     @OnMessage
+    //mostra ciò che arriva
     public void onMessage(String message) {
     	CommUtils.outgreen("ConwayCallerWs | riceve: " + message);
     }

@@ -8,7 +8,7 @@ services:
     environment:
 #      - HOST_IP=192.168.1.132
 #      - HOST_IP=192.168.1.9
-      - HOST_IP=138.136.113.239
+      - HOST_IP=130.136.113.239
 #    network_mode: "host"
 
 

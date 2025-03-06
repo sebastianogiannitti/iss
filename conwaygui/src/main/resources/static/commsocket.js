@@ -7,6 +7,9 @@ var serviceUrl  = null;
 var opened      = false
 
 //Chiamata al caricamento
+
+//usa istruzione fetch per fare comunicazione http col server sull'entry getserverip
+//comunicazione machine to machine
 function discoverServiceUrl(){
 	fetch('/getserverip')	
 	 .then(response => {
@@ -17,8 +20,8 @@ function discoverServiceUrl(){
 		return response.json()
 	 })
 	 .then(config => {
-	   serviceUrl = `${config.host}`
-	   createSocketForGui(serviceUrl);
+	   serviceUrl = `${config.host}`//config.host rappresenta il valore del campo host
+	   createSocketForGui(serviceUrl); //la socket si crea fornendo l'indirizzo IP del server
 	 })
 	 .catch(error => console.log('Errore:', error));
 }
@@ -60,6 +63,7 @@ function handleWsMessage(event){
 			clearOutArea() //in outarea.js
         }else {
             addItem(message); //in outarea.js
+			//se non è una cella ne clear, allora sarà un messaggio da esporre nel display
         }
 }
 

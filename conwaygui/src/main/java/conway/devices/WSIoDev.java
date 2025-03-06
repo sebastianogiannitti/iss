@@ -119,11 +119,16 @@ public class WSIoDev extends AbstractWebSocketHandler implements IOutDev{  //imp
 		}
 	}
 
+
+	//comunico in due modi: mostrando le celle o stringhe
+
 	@Override
 	public void display(String msg) {
 		broadcastToWebSocket(msg); 		
 	}
 
+	//passo direttamente il riferimanto alla cella
+	// mapping da cella a messaggio
 	@Override
 	public void displayCell(Cell cell) {
 		int value = cell.getState() ? 1 : 0;

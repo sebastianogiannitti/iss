@@ -374,7 +374,29 @@ Realizzazione di una pagina HTML che funga da dispositivo di input-output evolut
             Il mio obiettivo rimane creare un microservizio.</li>
 
             <li>Non rimane che concentrarmi sul controller lato SpringBoot</li>
+
+            <li>Come posso fare per passare da humana machine interaction a machine to machine?<br>
+            </li>
         </ul>
+
+        Nel local life controller, nel metodo homePage (annotato con getmapping),
+        invece di guipage return guiMirrorPage <br>
+        Per la gestione dei messaggi che invia il server<br>
+        Ora abbiamo una rete di connessioni tra l'owner e i mirror<br>
+        Se il controllore del gioco inizializza, i mirror dovrebbero vedere tutti i cambiamenti.
+        L'owner fa un broadcast a tutti. <br>
+        Nel momento in cui owner fa start, il controller aggiorna il display ad ogni iterazione,
+        e lato mirror lo vedo. I file java script presso lato mirror con websocket che riceve le informazioni dall'owner.<br>
+        App Java che inizializza la griglia cHe che mi permette di fare start/stop e visualizzare la griglia.<br>
+        ANALSI PROBLEMA: (devo sostituire owner umano con una macchina)<br>
+        Ho lanciato l'app e ho tolto il flag 'owner', ho un microservizio attivo.<br>
+        La macchina riceve messaggi inviati da websocket (START, STOP,...). Come scirvo un app java che apre una websocket?<br>
+        App java che apre web socket, che sistema le celle (inizializzazione), fatto ciò dice START e infine STOP.<br>
+        Posso anche pianificare i test, aspettandomi quali configurazioni raggiunge<br>
+
+
+
+
 
 
     </div>

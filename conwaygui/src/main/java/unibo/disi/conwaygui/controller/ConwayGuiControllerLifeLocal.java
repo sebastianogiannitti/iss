@@ -46,6 +46,7 @@ public class ConwayGuiControllerLifeLocal {
         WSIoDev.getInstance().setLifeCotrol(lifeController); //injections
 	}
 
+	// da guipage, ora return guimirrorpage
 	@GetMapping("/")
 	public String homePage(Model model) {
 		CommUtils.outmagenta("ConwayGuiControllerLifeLocal homePage");
