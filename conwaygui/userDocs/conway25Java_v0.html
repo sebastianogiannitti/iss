@@ -357,6 +357,30 @@ Realizzazione di una pagina HTML che funga da dispositivo di input-output evolut
 </div>
 
 
+    <h2>Domande Preliminari</h2>
+    <div class="remark">
+
+        <ul>
+            <li>Devo dotare la parte Java di una GUI, come fare?
+            Operare nel backend basandosi su Model View Control. Il Model dovrebbe essere la parte di software Java su cui abbiamo già lavorato.<br>
+            Per View si intende la visualizzazione del Model (pagina html), ma fungera anche da input (campiare InputMock). Il control in cosa consiste? Dovrei interporre il LifeController tra Model e View. </li>
+
+            <li>Tramite richiesta http, il server restituirebbe una nuova pagina modificata. Posso evitare che la richiesta venga eseguita senza creare ogni volta una nuova pagina?
+            Tramite WebSocket è possibile.<br>
+            </li>
+
+            <li>Se uso AJAX potrei facilmente impostare l'interfaccia MachineToMachine a partire dalla HMI? In cosa consiste questo passaggio?<br>
+            Devo fare in modo che l'interfaccia comunichi con il software java tramite comunicazione Machine to Machine. Così facendo potrei automatizzare i test tramite stessa tecnica. <br>
+            Il mio obiettivo rimane creare un microservizio.</li>
+
+            <li>Non rimane che concentrarmi sul controller lato SpringBoot</li>
+        </ul>
+
+
+    </div>
+
+
+
 
 
 <h2>Problem analysis</h2>
