@@ -394,7 +394,79 @@ Realizzazione di una pagina HTML che funga da dispositivo di input-output evolut
         App java che apre web socket, che sistema le celle (inizializzazione), fatto ciò dice START e infine STOP.<br>
         Posso anche pianificare i test, aspettandomi quali configurazioni raggiunge<br>
 
+        <h3>CallerWS</h3>
+        Prende la sessione inizializzata con connectToServer e fa getBasicRemote.
+        Ora che ho inizializzato, voglio sapere chi è che mi manda il messaggio.
+        A mostrare il messaggio è onMessage, perché? <br>
+        L'interazione avviene tramite protocollo WS che stabilisce connessione bidirezionale,
+        ma è una forma di interazione asincrona. Quando invio un messaggio non rimango
+        in attesa di risposta. Infatti nel codice non ci sono receive, ma c'è
+        sendMessageOnWS. Dopo che ho fatto le send, nel codice
+        il caller non fa nulla, ma notifica comunque il cambio di stato anche se dopo
+        10 secondi non riceve più nulla.<br>
+        L'informazione è emessa dalla libreria di supporto del WS, che si incarica
+        di ricevere i messaggi verdi e rimapparli con onMessage, che viene
+        reso visibile a livello applicativo.
+        Trasformazione di messaggi che arrivano in modo asincrono e fa in modo
+        che queste emergano nel caller tramite onMessage (INTRUSIONE).<br>
+        WS è un filo che connette il caller con il server, è bidirezionale perché
+        il caller invia informazione all'altro e viceversa.<br>
+        Come fa il server a ricevere le informazioni dal caller?<br>
+        In commsocket vediamo handleMessage, contenuto in createSocket che crea la
+        socket per comunicazione asincrona in javascript, ma la logica è la stessa
+        che troviamo in java.<br>
+        Il vero responsabile del messaggio ricevuto dal caller è iomap.js
+        che fa uptadeCellColor, che riceve le coordinate della cella e
+        fa lo switch di stato.<br>
+        Invece, WSIoDev.java (lato server) interviene quando c'è da fare
+        displayCell, che converte la cella in un valore e fa display(msg).<br>
 
+
+
+
+
+
+    </div>
+
+    <h2>Cambio interazione (commdemo)</h2>
+    <div class="remark">
+        <h3>CallerWSInteraction</h3>
+        Voglio eliminare il fatto di lavorare con protocolli websocket...
+        voglio che rimanga solo il concetto di interconnessione.<br>
+        Mi rivolgo ad una factory per un clientsupport per protocol.WS. <br>
+        <ul>
+            <li>
+                Il caller funziona come prima, ma cambio libreria da utilizzare.
+                Elimino le librerie di supporto di springBoot per divincolarmi.
+                Quando faccio la comunicazione con il server, la faccio tramite
+                oggetti interaction, nascondendo il protocollo utilizzato. <br>
+                In caso dovessi cambiare protocollo, la mia applicazione non
+                subisce cambiamenti. Non sono dipendente dalla tecnologia utilizzata.<br>
+                Se il mio componente fa da osservatore (IObserve), allora osserva
+                il server che invia i messaggi.
+            </li>
+            <li>
+                Prima c'era onMessage, ora c'è update (tipico dei pattern observer),
+                che verrà chiamato dall'infrastruttura. Prima era legata alla
+                tecnologia usata, ora è correlata al design pattern che utilizzo.<br>
+                Ora nascondo tutte le dipendenze dalle tecnologie.
+            </li>
+        </ul>
+
+    </div>
+
+    <h2>Custom per comunicazione</h2>
+    <div class="remark">
+        Dispatch, request,... inviare un dispatch implica avere un interlocutore,
+        (fire and forget).<br>
+        Una request, mi aspetto che il destinatario prima o poi mi invii una risposta
+        (response).
+        La comunicazione rimane asincrona, quindi comunque non mi blocco in attesa.<br>
+        Event viene emessa senza avere alcun destinatario, a chiunque sia in grado
+        di elaborarlo.<br>
+        Tutti i miei messaggi dovranno essere oggetti che implementeranno
+        interfaccia IAppIMessage. E verranno costruiti con una sestupla.
+        Vedi "Struttura dei messaggi" (lectures).
 
 
 
@@ -435,7 +507,6 @@ Realizzazione di una pagina HTML che funga da dispositivo di input-output evolut
         </ul>
 
         <h3>Tempistiche</h3>
-        La progettazione della GUI in java richiede dalle 2 alle 3 settimane (in funzione delle competenze e orari disponibili)
 
     </div>
 

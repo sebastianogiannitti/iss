@@ -20,7 +20,7 @@ public class ConwayInputMock {
 //		System.out.println("---------Initial----------");
 //		outdev.displayGrid();
 //		play(); 		   	
-		control.start();
+		control.startTheGame();
     }
 
 }

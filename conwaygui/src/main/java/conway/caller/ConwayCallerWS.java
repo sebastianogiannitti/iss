@@ -55,15 +55,29 @@ public class ConwayCallerWS {
             sendMessageOnWs("cell-2-2");
             sendMessageOnWs("cell-3-2");
 
+            //myjob();
+
             
-            sendMessageOnWs("start");
-            CommUtils.delay(3000);
-            sendMessageOnWs("stop");
+            //sendMessageOnWs("start");
+            //CommUtils.delay(3000);
+            //sendMessageOnWs("stop");
             
             
         } catch (Exception e) {
         	CommUtils.outred("ConwayCallerWs | ERROR:" +e.getMessage());
         }    	
+    }
+
+    //esperimento
+    protected void myjob() {
+        CommUtils.delay(2000);
+        new Thread() {
+            public void run() {
+                for (int i = 5; i <= 5; i++)
+                CommUtils.outmagenta("I'm working" + i);
+                CommUtils.delay(500);
+            }
+        }.start();
     }
     
     @OnOpen
@@ -97,8 +111,9 @@ public class ConwayCallerWS {
 
     public static void main(String[] args) {
     	ConwayCallerWS caller = new ConwayCallerWS();
-    	caller.workWithGame(); 
-    	CommUtils.delay(10000); //To chcek broadcasted messages
+    	caller.workWithGame();
+        //caller.myjob();
+    	CommUtils.delay(10000); //To check broadcasted messages
     	CommUtils.outmagenta("ConwayCallerWs | BYE" );
     }
 
