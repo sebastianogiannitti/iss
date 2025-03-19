@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="commdemo/src/main/java"/>
+	<classpathentry kind="src" path="conway25Java/src/main/java"/>
+	<classpathentry kind="src" path="conway25Java/src/test/java"/>
+	<classpathentry kind="src" path="conway25Java/test"/>
+	<classpathentry kind="src" path="conwaygui/src/main/java"/>
+	<classpathentry kind="src" path="conwaygui/src/test/java"/>
+	<classpathentry kind="src" path="conwayguialone/src/main/java"/>
+	<classpathentry kind="lib" path="conway25Java/bin/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="iss25Material/plugins/it.unibo.Qactork_1.5.9.jar"/>
+	<classpathentry kind="lib" path="iss25Material/plugins/it.unibo.Qactork.ide_1.5.9.jar"/>
+	<classpathentry kind="lib" path="iss25Material/plugins/it.unibo.Qactork.ui_1.5.9.jar"/>
+	<classpathentry kind="lib" path="unibolibs/2p301.jar"/>
+	<classpathentry kind="lib" path="unibolibs/unibo.basicomm23-1.0.jar"/>
+	<classpathentry kind="lib" path="unibolibs/unibo.qakactor23-5.0.jar"/>
+	<classpathentry kind="lib" path="unibolibs/uniboInterfaces.jar"/>
+	<classpathentry kind="output" path="commdemo/bin"/>
+</classpath>
