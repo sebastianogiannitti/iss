@@ -1,3 +1,9 @@
 /.metadata/
 
 /.idea
+
+logs/
+
+plugins/
+
+unibolibs/

@@ -1882,3 +1882,118 @@ java.lang.IllegalStateException: The remote endpoint was in state [TEXT_PARTIAL_
 2025-03-16 22:25:01 [http-nio-7110-exec-1] - Completed initialization in 1 ms
 2025-03-17 00:59:47 [MQTT Ping: wslifeguimqtt_out] - wslifeguimqtt_out: Timed out as no write activity, keepAlive=30,000,000,000 lastOutboundActivity=313,131,843,463,700 lastInboundActivity=313,131,847,758,100 time=321,898,191,863,000 lastPing=313,131,843,504,800
 2025-03-17 00:59:49 [MQTT Ping: wslifeguimqtt_in] - wslifeguimqtt_in: Timed out as no write activity, keepAlive=30,000,000,000 lastOutboundActivity=313,133,977,747,600 lastInboundActivity=313,133,982,536,800 time=321,900,320,590,700 lastPing=313,133,977,771,400
+2025-03-20 14:40:55 [restartedMain] - Starting ConwayguialoneApplication using Java 17.0.14 with PID 11866 (/Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone/build/classes/java/main started by sebastiano in /Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone)
+2025-03-20 14:40:55 [restartedMain] - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 14:40:55 [restartedMain] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 14:40:55 [restartedMain] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 14:40:55 [restartedMain] - Tomcat initialized with port 7110 (http)
+2025-03-20 14:40:55 [restartedMain] - Initializing ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:40:55 [restartedMain] - Starting service [Tomcat]
+2025-03-20 14:40:55 [restartedMain] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-20 14:40:55 [restartedMain] - Initializing Spring embedded WebApplicationContext
+2025-03-20 14:40:55 [restartedMain] - Root WebApplicationContext: initialization completed in 308 ms
+2025-03-20 14:40:55 [restartedMain] - Adding welcome page: class path resource [static/index.html]
+2025-03-20 14:40:55 [restartedMain] - LiveReload server is running on port 35729
+2025-03-20 14:40:55 [restartedMain] - Starting ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:40:55 [restartedMain] - Tomcat started on port 7110 (http) with context path '/'
+2025-03-20 14:40:55 [restartedMain] - Started ConwayguialoneApplication in 0.576 seconds (process running for 0.767)
+2025-03-20 14:41:16 [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 14:41:16 [tomcat-shutdown] - Graceful shutdown complete
+2025-03-20 14:41:18 [restartedMain] - Starting ConwayguialoneApplication using Java 17.0.14 with PID 11912 (/Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone/build/classes/java/main started by sebastiano in /Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone)
+2025-03-20 14:41:18 [restartedMain] - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 14:41:18 [restartedMain] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 14:41:18 [restartedMain] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 14:41:19 [restartedMain] - Tomcat initialized with port 7110 (http)
+2025-03-20 14:41:19 [restartedMain] - Initializing ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:41:19 [restartedMain] - Starting service [Tomcat]
+2025-03-20 14:41:19 [restartedMain] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-20 14:41:19 [restartedMain] - Initializing Spring embedded WebApplicationContext
+2025-03-20 14:41:19 [restartedMain] - Root WebApplicationContext: initialization completed in 302 ms
+2025-03-20 14:41:19 [restartedMain] - Adding welcome page: class path resource [static/index.html]
+2025-03-20 14:41:19 [restartedMain] - LiveReload server is running on port 35729
+2025-03-20 14:41:19 [restartedMain] - Starting ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:41:19 [restartedMain] - Tomcat started on port 7110 (http) with context path '/'
+2025-03-20 14:41:19 [restartedMain] - Started ConwayguialoneApplication in 1.211 seconds (process running for 1.372)
+2025-03-20 14:42:53 [http-nio-7110-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 14:42:53 [http-nio-7110-exec-1] - Initializing Servlet 'dispatcherServlet'
+2025-03-20 14:42:53 [http-nio-7110-exec-1] - Completed initialization in 1 ms
+2025-03-20 14:44:56 [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 14:44:56 [tomcat-shutdown] - Graceful shutdown complete
+2025-03-20 14:47:12 [restartedMain] - Starting ConwayguialoneApplication using Java 17.0.14 with PID 12013 (/Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone/build/classes/java/main started by sebastiano in /Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone)
+2025-03-20 14:47:12 [restartedMain] - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 14:47:12 [restartedMain] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 14:47:12 [restartedMain] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 14:47:12 [restartedMain] - Tomcat initialized with port 7110 (http)
+2025-03-20 14:47:12 [restartedMain] - Initializing ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:47:12 [restartedMain] - Starting service [Tomcat]
+2025-03-20 14:47:12 [restartedMain] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-20 14:47:12 [restartedMain] - Initializing Spring embedded WebApplicationContext
+2025-03-20 14:47:12 [restartedMain] - Root WebApplicationContext: initialization completed in 294 ms
+2025-03-20 14:47:13 [restartedMain] - Adding welcome page: class path resource [static/index.html]
+2025-03-20 14:47:13 [restartedMain] - LiveReload server is running on port 35729
+2025-03-20 14:47:13 [restartedMain] - Starting ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:47:13 [restartedMain] - Tomcat started on port 7110 (http) with context path '/'
+2025-03-20 14:47:13 [restartedMain] - Started ConwayguialoneApplication in 1.208 seconds (process running for 1.37)
+2025-03-20 14:47:18 [http-nio-7110-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 14:47:18 [http-nio-7110-exec-1] - Initializing Servlet 'dispatcherServlet'
+2025-03-20 14:47:18 [http-nio-7110-exec-1] - Completed initialization in 1 ms
+2025-03-20 14:49:20 [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 14:49:20 [tomcat-shutdown] - Graceful shutdown complete
+2025-03-20 14:49:34 [restartedMain] - Starting ConwayguialoneApplication using Java 17.0.14 with PID 12060 (/Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone/build/classes/java/main started by sebastiano in /Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone)
+2025-03-20 14:49:34 [restartedMain] - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 14:49:34 [restartedMain] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 14:49:34 [restartedMain] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 14:49:34 [restartedMain] - Tomcat initialized with port 7110 (http)
+2025-03-20 14:49:34 [restartedMain] - Initializing ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:49:34 [restartedMain] - Starting service [Tomcat]
+2025-03-20 14:49:34 [restartedMain] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-20 14:49:34 [restartedMain] - Initializing Spring embedded WebApplicationContext
+2025-03-20 14:49:34 [restartedMain] - Root WebApplicationContext: initialization completed in 292 ms
+2025-03-20 14:49:35 [restartedMain] - Adding welcome page: class path resource [static/index.html]
+2025-03-20 14:49:35 [restartedMain] - LiveReload server is running on port 35729
+2025-03-20 14:49:35 [restartedMain] - Starting ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:49:35 [restartedMain] - Tomcat started on port 7110 (http) with context path '/'
+2025-03-20 14:49:35 [restartedMain] - Started ConwayguialoneApplication in 1.215 seconds (process running for 1.376)
+2025-03-20 14:51:08 [http-nio-7110-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 14:51:08 [http-nio-7110-exec-1] - Initializing Servlet 'dispatcherServlet'
+2025-03-20 14:51:08 [http-nio-7110-exec-1] - Completed initialization in 1 ms
+2025-03-20 14:54:32 [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 14:54:32 [tomcat-shutdown] - Graceful shutdown complete
+2025-03-20 14:56:14 [restartedMain] - Starting ConwayguialoneApplication using Java 17.0.14 with PID 12184 (/Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone/build/classes/java/main started by sebastiano in /Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone)
+2025-03-20 14:56:14 [restartedMain] - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 14:56:14 [restartedMain] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 14:56:14 [restartedMain] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 14:56:15 [restartedMain] - Tomcat initialized with port 7110 (http)
+2025-03-20 14:56:15 [restartedMain] - Initializing ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:56:15 [restartedMain] - Starting service [Tomcat]
+2025-03-20 14:56:15 [restartedMain] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-20 14:56:15 [restartedMain] - Initializing Spring embedded WebApplicationContext
+2025-03-20 14:56:15 [restartedMain] - Root WebApplicationContext: initialization completed in 306 ms
+2025-03-20 14:56:15 [restartedMain] - Adding welcome page: class path resource [static/index.html]
+2025-03-20 14:56:16 [restartedMain] - LiveReload server is running on port 35729
+2025-03-20 14:56:16 [restartedMain] - Starting ProtocolHandler ["http-nio-7110"]
+2025-03-20 14:56:16 [restartedMain] - Tomcat started on port 7110 (http) with context path '/'
+2025-03-20 14:56:16 [restartedMain] - Started ConwayguialoneApplication in 1.222 seconds (process running for 1.385)
+2025-03-20 14:56:22 [http-nio-7110-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 14:56:22 [http-nio-7110-exec-1] - Initializing Servlet 'dispatcherServlet'
+2025-03-20 14:56:22 [http-nio-7110-exec-1] - Completed initialization in 1 ms
+2025-03-20 15:00:30 [http-nio-7110-exec-10] - "Handshake failed due to invalid Upgrade header: null"
+2025-03-20 15:02:09 [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 15:02:09 [tomcat-shutdown] - Graceful shutdown complete
+2025-03-24 17:18:22 [restartedMain] - Starting ConwayguialoneApplication using Java 17.0.14 with PID 15284 (/Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone/build/classes/java/main started by sebastiano in /Users/sebastiano/Documents/IngegneriaSistemiSoftware/iss/conwayguialone)
+2025-03-24 17:18:22 [restartedMain] - No active profile set, falling back to 1 default profile: "default"
+2025-03-24 17:18:22 [restartedMain] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-24 17:18:22 [restartedMain] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-24 17:18:22 [restartedMain] - Tomcat initialized with port 7110 (http)
+2025-03-24 17:18:22 [restartedMain] - Initializing ProtocolHandler ["http-nio-7110"]
+2025-03-24 17:18:22 [restartedMain] - Starting service [Tomcat]
+2025-03-24 17:18:22 [restartedMain] - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-24 17:18:22 [restartedMain] - Initializing Spring embedded WebApplicationContext
+2025-03-24 17:18:22 [restartedMain] - Root WebApplicationContext: initialization completed in 321 ms
+2025-03-24 17:18:22 [restartedMain] - Adding welcome page: class path resource [static/index.html]
+2025-03-24 17:18:22 [restartedMain] - LiveReload server is running on port 35729
+2025-03-24 17:18:22 [restartedMain] - Starting ProtocolHandler ["http-nio-7110"]
+2025-03-24 17:18:22 [restartedMain] - Tomcat started on port 7110 (http) with context path '/'
+2025-03-24 17:18:22 [restartedMain] - Started ConwayguialoneApplication in 0.6 seconds (process running for 0.784)
+2025-03-24 17:18:31 [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-24 17:18:31 [tomcat-shutdown] - Graceful shutdown complete
