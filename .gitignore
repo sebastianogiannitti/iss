@@ -2,6 +2,10 @@
 
 /.idea
 
+.DS_Store
+.classpath
+.project
+
 logs/
 
 plugins/
